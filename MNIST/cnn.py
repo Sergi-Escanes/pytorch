@@ -14,6 +14,8 @@ import cv2
 
 save_misclassified_images = 0
 
+# Disclaimer: this is standard PyTorch code for MNIST, modified at will for performance/speed and training on M1 mac GPU
+
 
 ## CNN
 class Net(nn.Module):
@@ -83,7 +85,7 @@ def test(model, device, test_loader):
 
 
 def main():
-    # Training settings
+    # Training settings. Credits to TechHara to allow for M1 GPU training
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
     parser.add_argument('--batch-size', type=int, default=64, metavar='N',
                         help='input batch size for training (default: 64)')
