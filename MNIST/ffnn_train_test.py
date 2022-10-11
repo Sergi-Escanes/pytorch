@@ -95,10 +95,10 @@ def main():
                         help='number of epochs to train (default: 1)')
     parser.add_argument('--lr', type=float, default=1.0, metavar='LR',
                         help='learning rate (default: 1.0)')
-    parser.add_argument('--gamma', type=float, default=0.7, metavar='M',
-                        help='Learning rate step gamma (default: 0.7)')
+    parser.add_argument('--gamma', type=float, default=0.1, metavar='M',
+                        help='Learning rate step gamma (default: 0.1)')
     parser.add_argument('--device', default='cpu',
-                        help='choose device')  ####
+                        help='choose device')
     parser.add_argument('--dry-run', action='store_true', default=False,
                         help='quickly check a single pass')  ####
     parser.add_argument('--seed', type=int, default=1, metavar='S',
